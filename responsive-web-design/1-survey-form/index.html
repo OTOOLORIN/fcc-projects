@@ -11,5 +11,26 @@
         <p id="description">Hey avid reader! This survey gathers insights into reading
             preferences: perfect for a book club.
         </p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" minlength="3" required placeholder="e.g. John Doe">
+                <label for="email">Email</label>
+                <input id="email" type="email" required placeholder="e.g. johndoe@gmail.com">
+                <label for="age">Age (optional)</label>
+                <input id="age" type="number" min="7" max="100">
+                <label for="fav-author">Who is you favorite author?</label>
+                <input id="fav-author" type="text" required>
+            </fieldset>
+            <fieldset>
+                <legend>What is your preferred reading format? (required)</legend>
+                <input id="audio" type="radio" name="reading-format" checked>
+                <label for="audio">Audiobooks</label>
+                <input id="physical" type="radio" name="reading-format">
+                <label for="physical">Physical Books</label>
+                <input id="e-books" type="radio" name="reading-format">
+                <label for="e-books">E-Books</label>
+            </fieldset>
+        </form>
     </body>
 </html>
