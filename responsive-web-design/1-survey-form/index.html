@@ -24,13 +24,48 @@
             </fieldset>
             <fieldset>
                 <legend>What is your preferred reading format? (required)</legend>
-                <input id="audio" type="radio" name="reading-format" checked>
-                <label for="audio">Audiobooks</label>
-                <input id="physical" type="radio" name="reading-format">
-                <label for="physical">Physical Books</label>
-                <input id="e-books" type="radio" name="reading-format">
-                <label for="e-books">E-Books</label>
+                <input class='inline' id="audio" type="radio" name="reading-format" checked>
+                <label class='inline' for="audio">Audiobooks</label><hr>
+                <input class='inline' id="physical" type="radio" name="reading-format">
+                <label class='inline' for="physical">Physical Books</label><hr>
+                <input class='inline' id="e-books" type="radio" name="reading-format">
+                <label class='inline' for="e-books">E-Books</label><hr>
+                <label id='monthly-read-label' for="monthly-read">How many books do you read in a month?</label>
+                <input required type="number" min="1" name="monthly-read" id='monthly-read'>
             </fieldset>
+            <fieldset>
+                <legend>What book genre would you recommend to a book club?</legend>
+                <input type="checkbox" id="fantasy" name="fav-genre" value="fantasy" class="inline">
+                <label for="fantasy" class="inline new-line">Fantasy</label><hr>
+                <input type="checkbox" id="scifi" name="fav-genre" value="scifi" class="inline">
+                <label for="scifi" class="inline new-line">Science Fiction</label><hr>
+                <input type="checkbox" id="self-help" name="fav-genre" value="self-help" class="inline">
+                <label for="self-help" class="inline new-line">Self-Help</label><hr>
+                <input id="romance" type="checkbox" name="fav-genre" value="romance" class="inline">
+                <label for="romance" class="inline new-line">Romance</label><hr>
+                <input type="checkbox" id="travel" name="fav-genre" value="travel" class="inline">
+                <label for="travel" class="inline new-line">Travel</label><hr>
+                <input id="science" type="checkbox" name="fav-genre" value="science" class="inline">
+                <label for="science" class="inline new-line">Science </label><hr>
+                <input id="politics" type="checkbox" name="fav-genre" value="politics" class="inline">
+                <label for="politics" class="inline new-line">Politics</label><hr>
+                <input id="cookbook" type="checkbox" name="fav-genre" value="cookbook" class="inline">
+                <label for="cookbook" class="inline new-line">Cookbooks</label><hr>
+                <label for="other-genre" class="inline spacing">Other:</label>
+                <input type="text" id="other-genre" name="other-genre" class="inline width-increase">
+            </fieldset>
+            <fieldset>
+                <label for="member">Are you in a book club?</label>
+                <select class="club-member" id="member">
+                    <option value="">(select one)</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">I don't know a functional book club</option>
+                </select>
+                <label for="feature">What other features do you want in a book club?</label>
+                <textarea id="feature" rows="3" cols="30">A book club should have a mini recreational spot...</textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
         </form>
     </body>
 </html>
