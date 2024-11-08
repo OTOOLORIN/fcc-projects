@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Book Lover Survey</title>
         <meta name="viewport" content="widtth=device-width, initial-scale=1.0">
-        <Link rel="stylesheet" href="./syles.css">
+        <Link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <h1 id="title">Bibliophile Insights</h1>
@@ -15,20 +15,20 @@
             <fieldset>
                 <label for="name" id="name-label">Name</label>
                 <input id="name" type="text" minlength="3" required placeholder="e.g. John Doe">
-                <label for="email">Email</label>
+                <label for="email" id='email-label'>Email</label>
                 <input id="email" type="email" required placeholder="e.g. johndoe@gmail.com">
-                <label for="age">Age (optional)</label>
-                <input id="age" type="number" min="7" max="100">
+                <label for="number" id='number-label'>Age (optional)</label>
+                <input id="number" type="number" placeholder='Enter you age in years' min="7" max="100">
                 <label for="fav-author">Who is you favorite author?</label>
                 <input id="fav-author" type="text" required>
             </fieldset>
             <fieldset>
                 <legend>What is your preferred reading format? (required)</legend>
-                <input class='inline' id="audio" type="radio" name="reading-format" checked>
+                <input class='inline' id="audio" type="radio" name="reading-format" value='audio' checked>
                 <label class='inline' for="audio">Audiobooks</label><hr>
-                <input class='inline' id="physical" type="radio" name="reading-format">
+                <input class='inline' id="physical" type="radio" name="reading-format" value='physical'>
                 <label class='inline' for="physical">Physical Books</label><hr>
-                <input class='inline' id="e-books" type="radio" name="reading-format">
+                <input class='inline' id="e-books" type="radio" name="reading-format" value='e-books'>
                 <label class='inline' for="e-books">E-Books</label><hr>
                 <label id='monthly-read-label' for="monthly-read">How many books do you read in a month?</label>
                 <input required type="number" min="1" name="monthly-read" id='monthly-read'>
@@ -56,7 +56,7 @@
             </fieldset>
             <fieldset>
                 <label for="member">Are you in a book club?</label>
-                <select class="club-member" id="member">
+                <select class="club-member" id="dropdown">
                     <option value="">(select one)</option>
                     <option value="1">Yes</option>
                     <option value="2">No</option>
