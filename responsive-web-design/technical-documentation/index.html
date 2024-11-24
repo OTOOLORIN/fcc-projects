@@ -128,7 +128,10 @@
                     WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; <br>
                     //statements } <br>
                 </code>
+                <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+                <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = <br>"otherValue";</code>
             </section>
+            
         </main>
 
     </body>
