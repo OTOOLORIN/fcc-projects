@@ -99,6 +99,15 @@
                 <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
                 <code>if (true) { let y = 10; } console.log(y); // ReferenceError: y is <br> not defined</code>
             </section>
+            <section id="global_variables" class="main-section">
+                <header>global variables</header>
+                <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access
+                    global variables using the window.variable syntax.</p>
+                <p>
+                    Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name.
+                    For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+                </p>
+            </section>
         </main>
 
     </body>
