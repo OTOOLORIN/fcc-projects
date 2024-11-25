@@ -78,7 +78,16 @@ nav ul li a {
 }
 
 #main-doc p {
-    margin: 2rem 0 2rem 4.5rem;
+    margin: 2rem 0 2rem 4rem;
     line-height: 2.2rem;
 
+}
+
+#main-doc ul {
+    margin-left: 9rem;
+}
+
+#main-doc ul li {
+    margin-bottom: 1.5rem;
+    line-height: 2.1rem;
 }
