@@ -65,7 +65,7 @@ nav ul li a {
 
 #main-doc header {
     font-size: 3rem;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2rem 0 0rem 2rem;
     text-transform: capitalize;
 }
 
@@ -75,4 +75,10 @@ nav ul li a {
 
 .lowercase {
     text-transform: none;
+}
+
+#main-doc p {
+    margin: 2rem 0 2rem 4.5rem;
+    line-height: 2.2rem;
+
 }
