@@ -16,11 +16,6 @@ body {
     font-size: 1.6rem;
 }
 
-.full-container {
-    position: relative;
-    height: 100%;
-}
-
 header {
     font-size: 2.3rem;
     color: #000;
@@ -106,9 +101,6 @@ code {
 }
 
 @media (max-width: 760px) {
-    .full-container {
-        position: static;
-    }
 
     #main-doc {
         position: static;
@@ -122,7 +114,7 @@ code {
         height: auto;
         position: static;
         width: 100%;
-        border-bottom: 3px solid darkslategray;
+        border-bottom: 2px solid darkslategray;
         border-right: 1px solid darkslategray;
     }
 }
