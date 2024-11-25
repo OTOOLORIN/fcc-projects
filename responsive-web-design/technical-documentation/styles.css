@@ -91,3 +91,12 @@ nav ul li a {
     margin-bottom: 1.5rem;
     line-height: 2.1rem;
 }
+
+code {
+    display: block;
+    margin-left: 6rem;
+    width: 89%;
+    padding: 1.4rem 0.5rem;
+    background-color: rgba(202, 214, 214, 0.5);
+    font-family: monospace;
+}
