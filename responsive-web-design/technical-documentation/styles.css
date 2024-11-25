@@ -16,5 +16,49 @@ body {
 }
 
 .full-container {
+    position: relative;
+    height: 100%;
     display: flex;
+}
+
+header {
+    font-size: 2.3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+nav {
+    border-right: 4px solid gray;
+    position: fixed;
+    height:100%;
+    width: 30rem;
+}
+
+nav header {
+    padding: 1.5rem 0 2rem 2rem;
+    font-size: 3rem;
+}
+nav ul {
+    list-style: none;
+    line-height: 2.5rem;
+    height: 100vh;
+}
+
+nav ul li {
+    border-top: 2.5px solid grey;
+    padding-left: 2rem;
+    font-size: 1.9rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#main-doc {
+    position: absolute;
+    left: 18rem;
 }
