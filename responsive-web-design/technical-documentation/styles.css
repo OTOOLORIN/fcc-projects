@@ -72,3 +72,7 @@ nav ul li a {
 #main-doc section:first-of-type header {
     margin-top: 0;
 }
+
+.lowercase {
+    text-transform: none;
+}
