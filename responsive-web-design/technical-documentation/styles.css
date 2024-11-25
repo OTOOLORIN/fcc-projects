@@ -61,16 +61,12 @@ nav ul li a {
 #main-doc header {
     font-size: 3rem;
     margin: 2rem 0 0rem 2rem;
-    text-transform: capitalize;
 }
 
 #main-doc section:first-of-type header {
     margin-top: 0;
 }
 
-.lowercase {
-    text-transform: none;
-}
 
 #main-doc p {
     margin: 2rem 0 2rem 4rem;
