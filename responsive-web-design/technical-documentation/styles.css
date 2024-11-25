@@ -59,5 +59,16 @@ nav ul li a {
 
 #main-doc {
     position: absolute;
-    left: 18rem;
+    left: 32rem;
+    padding: 2.5rem 0.5rem 0 1rem;
+}
+
+#main-doc header {
+    font-size: 3rem;
+    margin: 2rem 0 2rem 2rem;
+    text-transform: capitalize;
+}
+
+#main-doc section:first-of-type header {
+    margin-top: 0;
 }
